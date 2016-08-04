@@ -1,12 +1,12 @@
 resources:
-  - name: sample-script11
+  - name: sample1
     type: gitRepo
     integration: github
     pointer:
       sourceName: shiphitchcock24/sampleRub
       branch: master
       
-  - name: new-image1
+  - name: sample2
     type: image
     integration: ship4-docker
     pointer:
@@ -15,7 +15,7 @@ resources:
     seed:
       versionName: "latest" 
     flags:
-      - dvf1
+      - sample2
      # branch: master
      
  # - name: new-image2
@@ -27,7 +27,7 @@ resources:
     #seed: 
      # versionName: "latest" 
   
-  - name: new-tag3
+  - name: sample3
     type: image
     integration: ship4-docker
     pointer:
@@ -37,25 +37,25 @@ resources:
       versionName: "latest"
       #tag: latest
       
-  - name: test-cluster1
-    type: cluster
-    integration: ship-awsnew
-    pointer:
-      sourceName: "default" #name of the cluster we are deploying
-      region: "us-west-2" 
+  #- name: test-cluster1
+   # type: cluster
+  #  integration: ship-awsnew
+   # pointer:
+    #  sourceName: "default" #name of the cluster we are deploying
+     # region: "us-west-2" 
       
-  - name: mySlack
-    type: notification
-    integration: ship-slack1
-    pointer:
-      recipients:
-        - "#random"
+  #- name: mySlack
+   # type: notification
+  #  integration: ship-slack1
+   # pointer:
+    #  recipients:
+     #   - "#random"
       # - "@pvt-channel"
 
-  - name: myEmail1
-    type: notification
-    integration: email
-    pointer:
-      recipients: 
-        -  "sreya@shippable.com"
+  #- name: myEmail1
+   # type: notification
+  #  integration: email
+   # pointer:
+    #  recipients: 
+     #   -  "sreya@shippable.com"
 
