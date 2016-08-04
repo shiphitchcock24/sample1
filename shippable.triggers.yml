@@ -2,7 +2,7 @@ triggers:
    - name: trisample1
      type: trigger
      version:
-       counter: 755
+       counter: 77
    - name: trisample2
      type: trigger
      version:
