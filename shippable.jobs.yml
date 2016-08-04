@@ -1,30 +1,30 @@
 jobs:
-  - name: ecsfailmani105
+  - name: manifestsample1
     type: manifest
     steps:
-      - IN: trigger-dv-man
-      - IN: sample-script11
+      - IN: trisample1
+      - IN: sample1
       #  versionNumber: 10000
-      - OUT: new-image1
+      - OUT: sample2
       #  versionNumber: 1
       - TASK: managed
    # on_failure:
       #- ./party.sh
     #  - ls
      # - pwd
-  - name : deployecsvault78
-    type:  deploy
-    steps:
-      - IN: ecsfailmani105
-      - IN: test-cluster1
-      - IN: triggertest2
+ # - name : deployecsvault78
+ #   type:  deploy
+  #  steps:
+   #   - IN: ecsfailmani105
+    #  - IN: test-cluster1
+     # - IN: triggertest2
      #   versionNumber: 1
-      - TASK: managed
-        deployMethod: upgrade
-    on_success:
-      - NOTIFY: myEmail1
-    on_failure:
-      - NOTIFY: mySlack
+      #- TASK: managed
+       # deployMethod: upgrade
+    #on_success:
+     # - NOTIFY: myEmail1
+    #on_failure:
+     # - NOTIFY: mySlack
     #on_failure:
       #- ./party.sh
      # - echo 'failed'
