@@ -6,7 +6,7 @@ jobs:
       - IN: sample1
       #- IN: notexistig
        # versionNumber: 10000
-      - OUT: sample2
+    - OUT: sample2
       #  versionNumber: 1
       - TASK: managed
    # on_failure:
