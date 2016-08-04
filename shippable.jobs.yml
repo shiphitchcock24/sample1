@@ -2,8 +2,8 @@ jobs:
   - name: manifestsample1
     type: manifest
     steps:
-    - IN: trisample1
-      - IN: sample1
+      - IN: trisample1
+    - IN: sample1
       #- IN: notexistig
        # versionNumber: 10000
       - OUT: sample2
