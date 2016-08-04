@@ -1,9 +1,9 @@
 triggers:
-   - name: trigger-dv-man
+   - name: trisample1
      type: trigger
      version:
        counter: 755
-   - name: triggertest2
+   - name: trisample2
      type: trigger
      version:
       #message: 'new teswt2'
